@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace cs_0915_1
+namespace cs_con_string_int
 {
     class Program
     {
