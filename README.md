@@ -24,4 +24,19 @@ print(text);
 text = result + "";
 print(text);
 
+text = result.ToString();
+print(text);
+
+text = result.ToString("0000");
+print(text);
+
+text = (result+100000).ToString("###,##0");
+print(text);
+text = (result+100000).ToString("00-00-00");
+print(text);
+
+text = string.Format("{0:###,###}", 0);
+print(text);
+text = string.Format("{0:###,##0}", 0);
+print(text);
 ```
