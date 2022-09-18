@@ -41,10 +41,26 @@ namespace cs_con_string_int
             text = (result+100000).ToString("00-00-00");
             print(text);
 
-            text = string.Format("{0:###,###}", 0);
+            text = string.Format("/{0:###,###}/ /{0:###,##0}/ /{2:#円}/ /{1:0円}/", 0, 0, 0);
             print(text);
-            text = string.Format("{0:###,##0}", 0);
+
+            text = $"/{1234:###,###}/ /{1234:###,##0}/";
             print(text);
+
+            text = $"        {result+100000:#,0}";
+            int len = text.Length;
+            text = text.Substring(len-8,8);
+            print($"/{text}/");
+
+            text = $"        {0:#,0}";
+            len = text.Length;
+            text = text.Substring(len-8,8);
+            print($"/{text}/");
+
+            text = $"{new string(' ', 8)}{1234:#,0}";
+            len = text.Length;
+            text = text.Substring(len-8,8);
+            print($"/{text}/");
 
         }
 
