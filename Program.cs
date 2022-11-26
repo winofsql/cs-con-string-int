@@ -67,13 +67,13 @@ namespace cs_con_string_int
         private static void print(int v)
         {
             System.Console.WriteLine(v);
-            Debug.WriteLine(v);
+            Debug.WriteLine($"DBG:{v}");
         }
 
         private static void print(string v)
         {
             System.Console.WriteLine(v);
-            Debug.WriteLine(v);
+            Debug.WriteLine($"DBG:{v}");
         }
     }
 }
